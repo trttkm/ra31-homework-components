@@ -12,7 +12,6 @@ function App() {
     price: 399,
     currency: '£',
   };
-  const date = new Date(2021, 6, 17);
   
   return (
     <>
@@ -37,7 +36,7 @@ function App() {
         </div>
       </div>
       <div className="calendar-container">
-        <Calendar date={date} />
+        <Calendar date={new Date()} />
       </div>
     </>
   );
